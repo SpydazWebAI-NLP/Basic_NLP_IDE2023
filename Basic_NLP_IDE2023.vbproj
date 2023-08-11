@@ -77,6 +77,7 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="0.EntryPoint.vb" />
     <Compile Include="Controls\ClassSpydazWebLineNumbering.vb">
       <SubType>Component</SubType>
     </Compile>
@@ -117,6 +118,7 @@
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Controls\SysExtensions.vb" />
+    <Compile Include="Test_Interface.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Controls\ClassSpydazWebTextBox.en.resx">
@@ -1180,6 +1182,17 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\wolframalpha_logo_feature.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="wordlist.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\SpydazWebAI_ControlLibrary\SpydazWebAI_ControlLibrary.vbproj">
+      <Project>{7204CDDB-84C7-4F59-A52C-AEE7CF86D8D6}</Project>
+      <Name>SpydazWebAI_ControlLibrary</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
